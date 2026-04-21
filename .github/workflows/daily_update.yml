@@ -2,8 +2,8 @@ name: NSE Data Daily Sync
 
 on:
   schedule:
-    - cron: '30 23 * * *' # 5:00 AM IST / 11:30 PM UTC
-  workflow_dispatch: # Allows manual trigger
+    - cron: '30 23 * * *' # 5:00 AM IST
+  workflow_dispatch: 
 
 jobs:
   update_parquet:
@@ -12,23 +12,29 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Debug Workspace
+        run: |
+          echo "Listing root files:"
+          ls -F
+          echo "Listing data folder:"
+          ls -F data/
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install Dependencies
-        run: |
-          pip install pandas pyarrow requests fastparquet
+        run: pip install pandas pyarrow requests fastparquet
 
       - name: Run Scraper
+        # If 'Debug Workspace' shows the file is in root, this is correct:
         run: python nifty_scraper.py
 
       - name: Commit and Push
         run: |
           git config --global user.name 'Screener Bot'
           git config --global user.email 'bot@srijan.me'
-          git add data/nifty_data.parquet
-          # Only commit if the file actually changed
+          git add data/*.parquet
           git commit -m "Auto-update: NIFTY Data $(date)" || echo "No changes to commit"
           git push

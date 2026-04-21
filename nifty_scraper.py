@@ -8,19 +8,14 @@ import pandas as pd
 import requests
 import urllib3
 
-# Suppress warnings
 warnings.filterwarnings("ignore", category=urllib3.exceptions.NotOpenSSLWarning)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# ═══════════════════════════════════════════════════════════════
-# CONFIG
-# ═══════════════════════════════════════════════════════════════
+# CONFIG - Pointing strictly to the 'data' folder per your tree
 PARQUET_FILE = "data/nifty_data.parquet"
-# Start date if the file doesn't exist yet
-INCEPTION_DATE = datetime(2006, 1, 1) 
+VALUATION_FILE = "data/valuation_data.parquet"
 END_DATE = datetime.today()
 
-# Use your full ALL_INDICES dictionary here
 ALL_INDICES = {
     "Broad Market Indices": [
         "NIFTY 100",
@@ -163,10 +158,6 @@ ALL_INDICES = {
     ],
 }
 
-MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-
-def fmt(dt):
-    return f"{dt.day:02d}-{MONTHS[dt.month-1]}-{dt.year}"
 
 session = requests.Session()
 session.headers.update({
@@ -177,86 +168,60 @@ session.headers.update({
     "X-Requested-With": "XMLHttpRequest",
 })
 
-def fetch_tri(index_name, from_dt, to_dt):
-    """Hits the hidden NIFTY POST endpoint."""
-    # Handle the "INDEX" suffix requirement for certain Nifty indices
-    name_val = index_name if index_name.endswith("INDEX") else f"{index_name} INDEX"
+def fetch_data(index_name, from_dt, to_dt, endpoint_type="tri"):
+    """Fetch either TRI or Valuation data."""
+    suffix = " INDEX" if "INDEX" not in index_name else ""
+    url = "https://niftyindices.com/Backpage.aspx/" + \
+          ("getTotalReturnIndexString" if endpoint_type == "tri" else "getHistoricalIndexDataReportString")
     
-    payload = {"cinfo": f"{{'name':'{name_val}','startDate':'{fmt(from_dt)}','endDate':'{fmt(to_dt)}','indexName':'{index_name}'}}"}
+    payload = {"cinfo": f"{{'name':'{index_name}{suffix}','startDate':'{from_dt.strftime('%d-%b-%Y')}','endDate':'{to_dt.strftime('%d-%b-%Y')}','indexName':'{index_name}'}}"}
     try:
-        resp = session.post("https://niftyindices.com/Backpage.aspx/getTotalReturnIndexString", json=payload, timeout=30, verify=False)
-        resp_data = resp.json()
-        if "d" not in resp_data: return None
-        
-        data = json.loads(resp_data["d"])
-        if not data: return None
-        
-        df = pd.DataFrame(data)
-        # Handle inconsistent column naming from Nifty API
-        val_col = next((c for c in ["TotalReturnsIndex", "NTR_Value", "Total_Returns_Index"] if c in df.columns), None)
-        
-        df = df[["Date", val_col]].copy()
-        df.rename(columns={val_col: "Total_Returns_Index"}, inplace=True)
-        df["Date"] = pd.to_datetime(df["Date"], dayfirst=True)
-        df["Total_Returns_Index"] = pd.to_numeric(df["Total_Returns_Index"].astype(str).str.replace(",", ""), errors="coerce")
-        return df.dropna()
-    except Exception as e:
-        print(f"  Error fetching {index_name}: {e}")
+        resp = session.post(url, json=payload, timeout=30, verify=False)
+        data = json.loads(resp.json()["d"])
+        return pd.DataFrame(data) if data else None
+    except:
         return None
 
-def main():
-    # 1. SKIP WEEKENDS (Market is closed)
-    # 0=Mon, 4=Fri, 5=Sat, 6=Sun
-    if datetime.now().weekday() >= 5:
-        print("Market is closed (Weekend). Skipping fetch.")
+def update_file(file_path, endpoint_type, sub_indices_dict):
+    if not os.path.exists(file_path):
+        print(f"Skipping {file_path}: File not found.")
         return
 
-    # 2. CALCULATE START DATE FROM PARQUET
-    if os.path.exists(PARQUET_FILE):
-        print(f"Reading existing data from {PARQUET_FILE}...")
-        df_existing = pd.read_parquet(PARQUET_FILE)
-        df_existing["Date"] = pd.to_datetime(df_existing["Date"])
-        last_date = df_existing["Date"].max()
-        start_fetch = last_date + timedelta(days=1)
-        print(f"Last date in file: {last_date.strftime('%Y-%m-%d')}")
-    else:
-        print("No existing Parquet found. Starting full fetch.")
-        df_existing = pd.DataFrame()
-        start_fetch = INCEPTION_DATE
+    df_existing = pd.read_parquet(file_path)
+    df_existing["Date"] = pd.to_datetime(df_existing["Date"])
+    last_date = df_existing["Date"].max()
+    start_fetch = last_date + timedelta(days=1)
 
-    # 3. CHECK IF UPDATE IS NECESSARY
     if start_fetch > END_DATE:
-        print("Data is already up to date. No request needed.")
+        print(f"{file_path} is up to date.")
         return
 
-    print(f"Fetching missing data from {fmt(start_fetch)} to {fmt(END_DATE)}...")
-
-    # 4. FETCH LOOP
     new_frames = []
-    for sub_index, indices in ALL_INDICES.items():
+    for sub_cat, indices in sub_indices_dict.items():
         for name in indices:
-            df_new = fetch_tri(name, start_fetch, END_DATE)
+            df_new = fetch_data(name, start_fetch, END_DATE, endpoint_type)
             if df_new is not None and not df_new.empty:
+                # Clean columns based on type
+                if endpoint_type == "tri":
+                    val_col = next((c for c in ["TotalReturnsIndex", "NTR_Value", "Total_Returns_Index"] if c in df_new.columns), None)
+                    df_new = df_new[["Date", val_col]].rename(columns={val_col: "Total_Returns_Index"})
+                
+                df_new["Date"] = pd.to_datetime(df_new["Date"], dayfirst=True)
                 df_new["Index_Name"] = name
-                df_new["Sub_Index"] = sub_index
+                df_new["Sub_Index"] = sub_cat
                 new_frames.append(df_new)
-                print(f"  ✓ {name}: {len(df_new)} new rows.")
-            time.sleep(random.uniform(0.5, 1.5)) # Polite delay
+            time.sleep(1)
 
-    # 5. MERGE, DEDUPLICATE AND SAVE
     if new_frames:
-        df_new_all = pd.concat(new_frames, ignore_index=True)
-        df_final = pd.concat([df_existing, df_new_all], ignore_index=True)
-        
-        # Strictly deduplicate to prevent issues with holidays/late-night runs
-        df_final = df_final.drop_duplicates(subset=["Date", "Index_Name"])
-        df_final = df_final.sort_values(["Date", "Index_Name"])
-        
-        os.makedirs("data", exist_ok=True)
-        df_final.to_parquet(PARQUET_FILE, compression="snappy", index=False)
-        print(f"Update complete. New total rows: {len(df_final)}")
-    else:
-        print("No new data points returned by API (could be a public holiday).")
+        df_final = pd.concat([df_existing, pd.concat(new_frames)], ignore_index=True)
+        df_final.drop_duplicates(subset=["Date", "Index_Name"]).sort_values(["Date", "Index_Name"]).to_parquet(file_path, index=False)
+        print(f"Updated {file_path}")
+
+def main():
+    if datetime.now().weekday() >= 5: return # Skip weekends
+    update_file(PARQUET_FILE, "tri", ALL_INDICES)
+    # Note: For valuation, we usually only care about the Broad Market ones
+    update_file(VALUATION_FILE, "val", {"Broad Market": ALL_INDICES["Broad Market Indices"]})
 
 if __name__ == "__main__":
     main()
