@@ -22,7 +22,7 @@ jobs:
           pip install pandas pyarrow requests fastparquet
 
       - name: Run Scraper
-        run: python data/nifty_scraper.py
+        run: python nifty_scraper.py
 
       - name: Commit and Push
         run: |
