@@ -2,8 +2,8 @@ name: Update Valuation Data
 
 on:
   schedule:
-    # 5:30 AM IST = 00:00 UTC  |  runs on day 1, 4, 7, 10, … of each month
-    - cron: "0 0 */3 * *"
+    # 5:30 AM IST = 00:00 UTC  |  runs every day
+    - cron: "30 0 * * *"
   workflow_dispatch:          # allow manual trigger from the Actions tab
 
 permissions:
