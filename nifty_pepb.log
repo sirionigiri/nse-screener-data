@@ -1,0 +1,685 @@
+2026-05-04 01:50:35,817 [INFO] =================================================================
+2026-05-04 01:50:35,817 [INFO] NIFTY P/E · P/B · Div Yield Scraper  (1 request per index)
+2026-05-04 01:50:35,817 [INFO] Indices    : 131 across 4 sub-categories
+2026-05-04 01:50:35,817 [INFO] Date range : 28-Feb-2026 → 04-May-2026
+2026-05-04 01:50:35,817 [INFO] Output     : nifty_pepb_all.csv
+2026-05-04 01:50:35,817 [INFO] =================================================================
+2026-05-04 01:50:35,818 [INFO] 
+────────────────────────────────────────────────────────────
+  Sub-Index: Broad Market Indices
+────────────────────────────────────────────────────────────
+2026-05-04 01:50:35,818 [INFO] 
+[1/131] Broad Market Indices > NIFTY 100
+2026-05-04 01:50:36,441 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:36,443 [INFO]   ✓ 'NIFTY 100': 39 rows.
+2026-05-04 01:50:36,446 [INFO]   Checkpoint saved.
+2026-05-04 01:50:38,308 [INFO] 
+[2/131] Broad Market Indices > NIFTY 200
+2026-05-04 01:50:38,650 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:38,651 [INFO]   ✓ 'NIFTY 200': 39 rows.
+2026-05-04 01:50:38,654 [INFO]   Checkpoint saved.
+2026-05-04 01:50:39,853 [INFO] 
+[3/131] Broad Market Indices > NIFTY 50
+2026-05-04 01:50:40,225 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:40,227 [INFO]   ✓ 'NIFTY 50': 39 rows.
+2026-05-04 01:50:40,230 [INFO]   Checkpoint saved.
+2026-05-04 01:50:42,098 [INFO] 
+[4/131] Broad Market Indices > NIFTY 500
+2026-05-04 01:50:42,473 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:42,475 [INFO]   ✓ 'NIFTY 500': 39 rows.
+2026-05-04 01:50:42,478 [INFO]   Checkpoint saved.
+2026-05-04 01:50:44,833 [INFO] 
+[5/131] Broad Market Indices > NIFTY FPI 150
+2026-05-04 01:50:45,306 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:45,308 [INFO]   ✓ 'NIFTY FPI 150': 39 rows.
+2026-05-04 01:50:45,311 [INFO]   Checkpoint saved.
+2026-05-04 01:50:48,274 [INFO] 
+[6/131] Broad Market Indices > NIFTY LARGEMID250
+2026-05-04 01:50:48,619 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:48,621 [INFO]   ✓ 'NIFTY LARGEMID250': 39 rows.
+2026-05-04 01:50:48,623 [INFO]   Checkpoint saved.
+2026-05-04 01:50:51,598 [INFO] 
+[7/131] Broad Market Indices > NIFTY MICROCAP250
+2026-05-04 01:50:52,170 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:52,172 [INFO]   ✓ 'NIFTY MICROCAP250': 39 rows.
+2026-05-04 01:50:52,175 [INFO]   Checkpoint saved.
+2026-05-04 01:50:53,442 [INFO] 
+[8/131] Broad Market Indices > NIFTY MIDCAP 100
+2026-05-04 01:50:54,441 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:54,443 [INFO]   ✓ 'NIFTY MIDCAP 100': 39 rows.
+2026-05-04 01:50:54,447 [INFO]   Checkpoint saved.
+2026-05-04 01:50:56,495 [INFO] 
+[9/131] Broad Market Indices > NIFTY MIDCAP 150
+2026-05-04 01:50:56,917 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:56,918 [INFO]   ✓ 'NIFTY MIDCAP 150': 39 rows.
+2026-05-04 01:50:56,921 [INFO]   Checkpoint saved.
+2026-05-04 01:50:58,923 [INFO] 
+[10/131] Broad Market Indices > NIFTY MIDCAP 50
+2026-05-04 01:50:59,098 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:50:59,100 [INFO]   ✓ 'NIFTY MIDCAP 50': 39 rows.
+2026-05-04 01:50:59,103 [INFO]   Checkpoint saved.
+2026-05-04 01:51:00,373 [INFO] 
+[11/131] Broad Market Indices > NIFTY MID SELECT
+2026-05-04 01:51:00,533 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:00,535 [INFO]   ✓ 'NIFTY MID SELECT': 39 rows.
+2026-05-04 01:51:00,538 [INFO]   Checkpoint saved.
+2026-05-04 01:51:01,692 [INFO] 
+[12/131] Broad Market Indices > NIFTY MIDSML 400
+2026-05-04 01:51:01,892 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:01,894 [INFO]   ✓ 'NIFTY MIDSML 400': 39 rows.
+2026-05-04 01:51:01,898 [INFO]   Checkpoint saved.
+2026-05-04 01:51:03,749 [INFO] 
+[13/131] Broad Market Indices > NIFTY MIDSMALLCAP400 50:50
+2026-05-04 01:51:04,289 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:04,290 [INFO]   ✓ 'NIFTY MIDSMALLCAP400 50:50': 39 rows.
+2026-05-04 01:51:04,294 [INFO]   Checkpoint saved.
+2026-05-04 01:51:06,419 [INFO] 
+[14/131] Broad Market Indices > NIFTY NEXT 50
+2026-05-04 01:51:06,800 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:06,802 [INFO]   ✓ 'NIFTY NEXT 50': 39 rows.
+2026-05-04 01:51:06,806 [INFO]   Checkpoint saved.
+2026-05-04 01:51:08,731 [INFO] 
+[15/131] Broad Market Indices > NIFTY SMLCAP 100
+2026-05-04 01:51:09,202 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:09,204 [INFO]   ✓ 'NIFTY SMLCAP 100': 39 rows.
+2026-05-04 01:51:09,209 [INFO]   Checkpoint saved.
+2026-05-04 01:51:12,039 [INFO] 
+[16/131] Broad Market Indices > NIFTY SMLCAP 250
+2026-05-04 01:51:12,377 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:12,378 [INFO]   ✓ 'NIFTY SMLCAP 250': 39 rows.
+2026-05-04 01:51:12,383 [INFO]   Checkpoint saved.
+2026-05-04 01:51:15,263 [INFO] 
+[17/131] Broad Market Indices > NIFTY SMLCAP 50
+2026-05-04 01:51:15,638 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:15,639 [INFO]   ✓ 'NIFTY SMLCAP 50': 39 rows.
+2026-05-04 01:51:15,644 [INFO]   Checkpoint saved.
+2026-05-04 01:51:17,316 [INFO] 
+[18/131] Broad Market Indices > NIFTY SMALLCAP 500
+2026-05-04 01:51:18,009 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:18,010 [INFO]   ✓ 'NIFTY SMALLCAP 500': 39 rows.
+2026-05-04 01:51:18,014 [INFO]   Checkpoint saved.
+2026-05-04 01:51:19,555 [INFO] 
+[19/131] Broad Market Indices > NIFTY TOTAL MKT
+2026-05-04 01:51:20,058 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:20,060 [INFO]   ✓ 'NIFTY TOTAL MKT': 39 rows.
+2026-05-04 01:51:20,065 [INFO]   Checkpoint saved.
+2026-05-04 01:51:21,122 [INFO] 
+[20/131] Broad Market Indices > NIFTY500 LMS EQL
+2026-05-04 01:51:21,294 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:21,295 [INFO]   ✓ 'NIFTY500 LMS EQL': 39 rows.
+2026-05-04 01:51:21,299 [INFO]   Checkpoint saved.
+2026-05-04 01:51:23,663 [INFO] 
+[21/131] Broad Market Indices > NIFTY500 MULTICAP
+2026-05-04 01:51:24,107 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:24,108 [INFO]   ✓ 'NIFTY500 MULTICAP': 39 rows.
+2026-05-04 01:51:24,114 [INFO]   Checkpoint saved.
+2026-05-04 01:51:26,815 [INFO] 
+────────────────────────────────────────────────────────────
+  Sub-Index: Sectoral Indices
+────────────────────────────────────────────────────────────
+2026-05-04 01:51:26,816 [INFO] 
+[22/131] Sectoral Indices > NIFTY AUTO
+2026-05-04 01:51:26,989 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:26,990 [INFO]   ✓ 'NIFTY AUTO': 39 rows.
+2026-05-04 01:51:26,996 [INFO]   Checkpoint saved.
+2026-05-04 01:51:28,391 [INFO] 
+[23/131] Sectoral Indices > NIFTY BANK
+2026-05-04 01:51:29,067 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:29,069 [INFO]   ✓ 'NIFTY BANK': 39 rows.
+2026-05-04 01:51:29,074 [INFO]   Checkpoint saved.
+2026-05-04 01:51:31,141 [INFO] 
+[24/131] Sectoral Indices > NIFTY CEMENT
+2026-05-04 01:51:31,629 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:31,631 [INFO]   ✓ 'NIFTY CEMENT': 39 rows.
+2026-05-04 01:51:31,637 [INFO]   Checkpoint saved.
+2026-05-04 01:51:33,984 [INFO] 
+[25/131] Sectoral Indices > NIFTY CHEMICALS
+2026-05-04 01:51:34,599 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:34,601 [INFO]   ✓ 'NIFTY CHEMICALS': 39 rows.
+2026-05-04 01:51:34,606 [INFO]   Checkpoint saved.
+2026-05-04 01:51:37,367 [INFO] 
+[26/131] Sectoral Indices > NIFTY CONSR DURBL
+2026-05-04 01:51:37,874 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:37,875 [INFO]   ✓ 'NIFTY CONSR DURBL': 39 rows.
+2026-05-04 01:51:37,882 [INFO]   Checkpoint saved.
+2026-05-04 01:51:39,187 [INFO] 
+[27/131] Sectoral Indices > NIFTY FIN SERVICE
+2026-05-04 01:51:39,614 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:39,616 [INFO]   ✓ 'NIFTY FIN SERVICE': 39 rows.
+2026-05-04 01:51:39,622 [INFO]   Checkpoint saved.
+2026-05-04 01:51:40,652 [INFO] 
+[28/131] Sectoral Indices > NIFTY FINSRV25 50
+2026-05-04 01:51:41,570 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:41,571 [INFO]   ✓ 'NIFTY FINSRV25 50': 39 rows.
+2026-05-04 01:51:41,579 [INFO]   Checkpoint saved.
+2026-05-04 01:51:43,934 [INFO] 
+[29/131] Sectoral Indices > NIFTY FINSEREXBNK
+2026-05-04 01:51:44,632 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:44,634 [INFO]   ✓ 'NIFTY FINSEREXBNK': 39 rows.
+2026-05-04 01:51:44,640 [INFO]   Checkpoint saved.
+2026-05-04 01:51:46,189 [INFO] 
+[30/131] Sectoral Indices > NIFTY FMCG
+2026-05-04 01:51:57,740 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:51:57,741 [INFO]   ✓ 'NIFTY FMCG': 39 rows.
+2026-05-04 01:51:57,748 [INFO]   Checkpoint saved.
+2026-05-04 01:52:00,665 [INFO] 
+[31/131] Sectoral Indices > NIFTY HEALTHCARE
+2026-05-04 01:52:07,310 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:07,312 [INFO]   ✓ 'NIFTY HEALTHCARE': 39 rows.
+2026-05-04 01:52:07,319 [INFO]   Checkpoint saved.
+2026-05-04 01:52:10,246 [INFO] 
+[32/131] Sectoral Indices > NIFTY IT
+2026-05-04 01:52:20,783 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:20,785 [INFO]   ✓ 'NIFTY IT': 39 rows.
+2026-05-04 01:52:20,793 [INFO]   Checkpoint saved.
+2026-05-04 01:52:21,876 [INFO] 
+[33/131] Sectoral Indices > NIFTY MEDIA
+2026-05-04 01:52:22,341 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:22,342 [INFO]   ✓ 'NIFTY MEDIA': 39 rows.
+2026-05-04 01:52:22,350 [INFO]   Checkpoint saved.
+2026-05-04 01:52:24,721 [INFO] 
+[34/131] Sectoral Indices > NIFTY METAL
+2026-05-04 01:52:25,284 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:25,285 [INFO]   ✓ 'NIFTY METAL': 39 rows.
+2026-05-04 01:52:25,292 [INFO]   Checkpoint saved.
+2026-05-04 01:52:26,993 [INFO] 
+[35/131] Sectoral Indices > NIFTY MS FIN SERV
+2026-05-04 01:52:27,166 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:27,167 [INFO]   ✓ 'NIFTY MS FIN SERV': 39 rows.
+2026-05-04 01:52:27,175 [INFO]   Checkpoint saved.
+2026-05-04 01:52:28,577 [INFO] 
+[36/131] Sectoral Indices > NIFTY MIDSML HLTH
+2026-05-04 01:52:29,177 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:29,179 [INFO]   ✓ 'NIFTY MIDSML HLTH': 39 rows.
+2026-05-04 01:52:29,187 [INFO]   Checkpoint saved.
+2026-05-04 01:52:30,914 [INFO] 
+[37/131] Sectoral Indices > NIFTY MS IT TELCM
+2026-05-04 01:52:31,633 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:31,634 [INFO]   ✓ 'NIFTY MS IT TELCM': 39 rows.
+2026-05-04 01:52:31,643 [INFO]   Checkpoint saved.
+2026-05-04 01:52:33,185 [INFO] 
+[38/131] Sectoral Indices > NIFTY OIL AND GAS
+2026-05-04 01:52:33,689 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:33,690 [INFO]   ✓ 'NIFTY OIL AND GAS': 39 rows.
+2026-05-04 01:52:33,699 [INFO]   Checkpoint saved.
+2026-05-04 01:52:35,802 [INFO] 
+[39/131] Sectoral Indices > NIFTY PHARMA
+2026-05-04 01:52:36,139 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:36,141 [INFO]   ✓ 'NIFTY PHARMA': 39 rows.
+2026-05-04 01:52:36,150 [INFO]   Checkpoint saved.
+2026-05-04 01:52:38,468 [INFO] 
+[40/131] Sectoral Indices > NIFTY PVT BANK
+2026-05-04 01:52:38,682 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:38,684 [INFO]   ✓ 'NIFTY PVT BANK': 39 rows.
+2026-05-04 01:52:38,693 [INFO]   Checkpoint saved.
+2026-05-04 01:52:39,766 [INFO] 
+[41/131] Sectoral Indices > NIFTY PSU BANK
+2026-05-04 01:52:40,125 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:40,126 [INFO]   ✓ 'NIFTY PSU BANK': 39 rows.
+2026-05-04 01:52:40,135 [INFO]   Checkpoint saved.
+2026-05-04 01:52:42,257 [INFO] 
+[42/131] Sectoral Indices > NIFTY REALTY
+2026-05-04 01:52:42,747 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:42,748 [INFO]   ✓ 'NIFTY REALTY': 39 rows.
+2026-05-04 01:52:42,757 [INFO]   Checkpoint saved.
+2026-05-04 01:52:44,682 [INFO] 
+[43/131] Sectoral Indices > NIFTY500 HEALTH
+2026-05-04 01:52:45,453 [INFO]   No data for 'NIFTY500 HEALTH' — will retry.
+2026-05-04 01:52:45,453 [ERROR]   Giving up on 'NIFTY500 HEALTH' after 1 attempts.
+2026-05-04 01:52:45,453 [WARNING]   ✗ No data for 'NIFTY500 HEALTH'.
+2026-05-04 01:52:47,385 [INFO] 
+────────────────────────────────────────────────────────────
+  Sub-Index: Strategy Indices
+────────────────────────────────────────────────────────────
+2026-05-04 01:52:47,385 [INFO] 
+[44/131] Strategy Indices > NIFTY 50 ARBITRAGE
+2026-05-04 01:52:47,812 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:47,814 [INFO]   ✓ 'NIFTY 50 ARBITRAGE': 39 rows.
+2026-05-04 01:52:47,824 [INFO]   Checkpoint saved.
+2026-05-04 01:52:49,797 [INFO] 
+[45/131] Strategy Indices > NIFTY ALPHA 50
+2026-05-04 01:52:49,977 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:49,979 [INFO]   ✓ 'NIFTY ALPHA 50': 39 rows.
+2026-05-04 01:52:49,989 [INFO]   Checkpoint saved.
+2026-05-04 01:52:51,413 [INFO] 
+[46/131] Strategy Indices > NIFTY ALPHALOWVOL
+2026-05-04 01:52:51,706 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:51,707 [INFO]   ✓ 'NIFTY ALPHALOWVOL': 39 rows.
+2026-05-04 01:52:51,717 [INFO]   Checkpoint saved.
+2026-05-04 01:52:54,155 [INFO] 
+[47/131] Strategy Indices > NIFTY AQL 30
+2026-05-04 01:52:54,473 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:54,475 [INFO]   ✓ 'NIFTY AQL 30': 39 rows.
+2026-05-04 01:52:54,486 [INFO]   Checkpoint saved.
+2026-05-04 01:52:56,502 [INFO] 
+[48/131] Strategy Indices > NIFTY AQLV 30
+2026-05-04 01:52:57,030 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:52:57,032 [INFO]   ✓ 'NIFTY AQLV 30': 39 rows.
+2026-05-04 01:52:57,041 [INFO]   Checkpoint saved.
+2026-05-04 01:52:59,320 [INFO] 
+[49/131] Strategy Indices > NIFTY DIV OPPS 50
+2026-05-04 01:53:11,983 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:11,984 [INFO]   ✓ 'NIFTY DIV OPPS 50': 39 rows.
+2026-05-04 01:53:11,994 [INFO]   Checkpoint saved.
+2026-05-04 01:53:14,585 [INFO] 
+[50/131] Strategy Indices > NIFTY GROWSECT 15
+2026-05-04 01:53:15,153 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:15,155 [INFO]   ✓ 'NIFTY GROWSECT 15': 39 rows.
+2026-05-04 01:53:15,166 [INFO]   Checkpoint saved.
+2026-05-04 01:53:17,340 [INFO] 
+[51/131] Strategy Indices > NIFTY HIGHBETA 50
+2026-05-04 01:53:17,919 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:17,920 [INFO]   ✓ 'NIFTY HIGHBETA 50': 39 rows.
+2026-05-04 01:53:17,932 [INFO]   Checkpoint saved.
+2026-05-04 01:53:20,633 [INFO] 
+[52/131] Strategy Indices > NIFTY LOW VOL 50
+2026-05-04 01:53:34,918 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:34,919 [INFO]   ✓ 'NIFTY LOW VOL 50': 39 rows.
+2026-05-04 01:53:34,931 [INFO]   Checkpoint saved.
+2026-05-04 01:53:35,972 [INFO] 
+[53/131] Strategy Indices > NIFTYM150MOMNTM50
+2026-05-04 01:53:36,451 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:36,452 [INFO]   ✓ 'NIFTYM150MOMNTM50': 39 rows.
+2026-05-04 01:53:36,460 [INFO]   Checkpoint saved.
+2026-05-04 01:53:38,459 [INFO] 
+[54/131] Strategy Indices > NIFTY M150 QLTY50
+2026-05-04 01:53:39,116 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:39,117 [INFO]   ✓ 'NIFTY M150 QLTY50': 39 rows.
+2026-05-04 01:53:39,128 [INFO]   Checkpoint saved.
+2026-05-04 01:53:40,340 [INFO] 
+[55/131] Strategy Indices > NIFTYMS400 MQ 100
+2026-05-04 01:53:40,755 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:40,757 [INFO]   ✓ 'NIFTYMS400 MQ 100': 39 rows.
+2026-05-04 01:53:40,769 [INFO]   Checkpoint saved.
+2026-05-04 01:53:42,685 [INFO] 
+[56/131] Strategy Indices > NIFTY QLTY LV 30
+2026-05-04 01:53:43,622 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:43,623 [INFO]   ✓ 'NIFTY QLTY LV 30': 39 rows.
+2026-05-04 01:53:43,635 [INFO]   Checkpoint saved.
+2026-05-04 01:53:45,151 [INFO] 
+[57/131] Strategy Indices > NIFTYSML250MQ 100
+2026-05-04 01:53:45,679 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:45,681 [INFO]   ✓ 'NIFTYSML250MQ 100': 39 rows.
+2026-05-04 01:53:45,693 [INFO]   Checkpoint saved.
+2026-05-04 01:53:47,056 [INFO] 
+[58/131] Strategy Indices > NIFTY SML250 Q50
+2026-05-04 01:53:47,757 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:47,760 [INFO]   ✓ 'NIFTY SML250 Q50': 39 rows.
+2026-05-04 01:53:47,772 [INFO]   Checkpoint saved.
+2026-05-04 01:53:49,641 [INFO] 
+[59/131] Strategy Indices > NIFTY TOP 10 EW
+2026-05-04 01:53:50,497 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:50,499 [INFO]   ✓ 'NIFTY TOP 10 EW': 39 rows.
+2026-05-04 01:53:50,511 [INFO]   Checkpoint saved.
+2026-05-04 01:53:52,366 [INFO] 
+[60/131] Strategy Indices > NIFTY TOP 15 EW
+2026-05-04 01:53:52,737 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:52,739 [INFO]   ✓ 'NIFTY TOP 15 EW': 39 rows.
+2026-05-04 01:53:52,751 [INFO]   Checkpoint saved.
+2026-05-04 01:53:55,450 [INFO] 
+[61/131] Strategy Indices > NIFTY TOP 20 EW
+2026-05-04 01:53:56,318 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:56,320 [INFO]   ✓ 'NIFTY TOP 20 EW': 39 rows.
+2026-05-04 01:53:56,334 [INFO]   Checkpoint saved.
+2026-05-04 01:53:57,704 [INFO] 
+[62/131] Strategy Indices > NIFTY TMMQ 50
+2026-05-04 01:53:58,059 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:53:58,062 [INFO]   ✓ 'NIFTY TMMQ 50': 39 rows.
+2026-05-04 01:53:58,075 [INFO]   Checkpoint saved.
+2026-05-04 01:54:00,681 [INFO] 
+[63/131] Strategy Indices > NIFTY100 ALPHA 30
+2026-05-04 01:54:01,951 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:01,952 [INFO]   ✓ 'NIFTY100 ALPHA 30': 39 rows.
+2026-05-04 01:54:01,963 [INFO]   Checkpoint saved.
+2026-05-04 01:54:04,656 [INFO] 
+[64/131] Strategy Indices > NIFTY100 EQL WGT
+2026-05-04 01:54:06,767 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:06,768 [INFO]   ✓ 'NIFTY100 EQL WGT': 39 rows.
+2026-05-04 01:54:06,781 [INFO]   Checkpoint saved.
+2026-05-04 01:54:09,407 [INFO] 
+[65/131] Strategy Indices > NIFTY100 LOWVOL30
+2026-05-04 01:54:10,087 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:10,088 [INFO]   ✓ 'NIFTY100 LOWVOL30': 39 rows.
+2026-05-04 01:54:10,099 [INFO]   Checkpoint saved.
+2026-05-04 01:54:11,507 [INFO] 
+[66/131] Strategy Indices > NIFTY100 QUALTY30
+2026-05-04 01:54:11,672 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:11,674 [INFO]   ✓ 'NIFTY100 QUALTY30': 39 rows.
+2026-05-04 01:54:11,712 [INFO]   Checkpoint saved.
+2026-05-04 01:54:13,577 [INFO] 
+[67/131] Strategy Indices > NIFTY200 ALPHA 30
+2026-05-04 01:54:14,572 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:14,573 [INFO]   ✓ 'NIFTY200 ALPHA 30': 39 rows.
+2026-05-04 01:54:14,665 [INFO]   Checkpoint saved.
+2026-05-04 01:54:17,528 [INFO] 
+[68/131] Strategy Indices > NIFTY200MOMENTM30
+2026-05-04 01:54:18,399 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:18,400 [INFO]   ✓ 'NIFTY200MOMENTM30': 39 rows.
+2026-05-04 01:54:18,412 [INFO]   Checkpoint saved.
+2026-05-04 01:54:21,044 [INFO] 
+[69/131] Strategy Indices > NIFTY200 QUALITY 30
+2026-05-04 01:54:21,836 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:21,837 [INFO]   ✓ 'NIFTY200 QUALITY 30': 39 rows.
+2026-05-04 01:54:21,850 [INFO]   Checkpoint saved.
+2026-05-04 01:54:24,625 [INFO] 
+[70/131] Strategy Indices > NIFTY200 VALUE 30
+2026-05-04 01:54:25,431 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:25,433 [INFO]   ✓ 'NIFTY200 VALUE 30': 39 rows.
+2026-05-04 01:54:25,446 [INFO]   Checkpoint saved.
+2026-05-04 01:54:26,977 [INFO] 
+[71/131] Strategy Indices > NIFTY50 DIV POINT
+2026-05-04 01:54:27,706 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:27,708 [INFO]   ✓ 'NIFTY50 DIV POINT': 39 rows.
+2026-05-04 01:54:27,721 [INFO]   Checkpoint saved.
+2026-05-04 01:54:30,461 [INFO] 
+[72/131] Strategy Indices > NIFTY50 EQL WGT
+2026-05-04 01:54:31,953 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:31,955 [INFO]   ✓ 'NIFTY50 EQL WGT': 39 rows.
+2026-05-04 01:54:31,968 [INFO]   Checkpoint saved.
+2026-05-04 01:54:34,237 [INFO] 
+[73/131] Strategy Indices > NIFTY50 PR 1X INV
+2026-05-04 01:54:36,266 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:36,268 [INFO]   ✓ 'NIFTY50 PR 1X INV': 39 rows.
+2026-05-04 01:54:36,281 [INFO]   Checkpoint saved.
+2026-05-04 01:54:37,854 [INFO] 
+[74/131] Strategy Indices > NIFTY50 PR 2X LEV
+2026-05-04 01:54:38,616 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:38,618 [INFO]   ✓ 'NIFTY50 PR 2X LEV': 39 rows.
+2026-05-04 01:54:38,632 [INFO]   Checkpoint saved.
+2026-05-04 01:54:41,046 [INFO] 
+[75/131] Strategy Indices > NIFTY50 TR 1X INV
+2026-05-04 01:54:42,301 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:42,303 [INFO]   ✓ 'NIFTY50 TR 1X INV': 39 rows.
+2026-05-04 01:54:42,317 [INFO]   Checkpoint saved.
+2026-05-04 01:54:44,567 [INFO] 
+[76/131] Strategy Indices > NIFTY50 TR 2X LEV
+2026-05-04 01:54:45,479 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:45,480 [INFO]   ✓ 'NIFTY50 TR 2X LEV': 39 rows.
+2026-05-04 01:54:45,494 [INFO]   Checkpoint saved.
+2026-05-04 01:54:47,052 [INFO] 
+[77/131] Strategy Indices > NIFTY50 USD
+2026-05-04 01:54:48,051 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:48,053 [INFO]   ✓ 'NIFTY50 USD': 39 rows.
+2026-05-04 01:54:48,067 [INFO]   Checkpoint saved.
+2026-05-04 01:54:49,713 [INFO] 
+[78/131] Strategy Indices > NIFTY50 VALUE 20
+2026-05-04 01:54:50,603 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:50,605 [INFO]   ✓ 'NIFTY50 VALUE 20': 39 rows.
+2026-05-04 01:54:50,619 [INFO]   Checkpoint saved.
+2026-05-04 01:54:52,574 [INFO] 
+[79/131] Strategy Indices > NIFTY500 EW
+2026-05-04 01:54:53,474 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:53,476 [INFO]   ✓ 'NIFTY500 EW': 39 rows.
+2026-05-04 01:54:53,489 [INFO]   Checkpoint saved.
+2026-05-04 01:54:56,154 [INFO] 
+[80/131] Strategy Indices > NIFTY500 FLEXICAP
+2026-05-04 01:54:56,446 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:56,447 [INFO]   ✓ 'NIFTY500 FLEXICAP': 39 rows.
+2026-05-04 01:54:56,461 [INFO]   Checkpoint saved.
+2026-05-04 01:54:58,784 [INFO] 
+[81/131] Strategy Indices > NIFTY500 LOWVOL50
+2026-05-04 01:54:59,594 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:54:59,595 [INFO]   ✓ 'NIFTY500 LOWVOL50': 39 rows.
+2026-05-04 01:54:59,609 [INFO]   Checkpoint saved.
+2026-05-04 01:55:00,941 [INFO] 
+[82/131] Strategy Indices > NIFTY500MOMENTM50
+2026-05-04 01:55:01,984 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:01,986 [INFO]   ✓ 'NIFTY500MOMENTM50': 39 rows.
+2026-05-04 01:55:02,001 [INFO]   Checkpoint saved.
+2026-05-04 01:55:03,609 [INFO] 
+[83/131] Strategy Indices > NIFTY MULTI MQ 50
+2026-05-04 01:55:05,546 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:05,548 [INFO]   ✓ 'NIFTY MULTI MQ 50': 39 rows.
+2026-05-04 01:55:05,563 [INFO]   Checkpoint saved.
+2026-05-04 01:55:08,042 [INFO] 
+[84/131] Strategy Indices > NIFTY500 MQVLV50
+2026-05-04 01:55:09,227 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:09,229 [INFO]   ✓ 'NIFTY500 MQVLV50': 39 rows.
+2026-05-04 01:55:09,244 [INFO]   Checkpoint saved.
+2026-05-04 01:55:11,912 [INFO] 
+[85/131] Strategy Indices > NIFTY500 QLTY50
+2026-05-04 01:55:12,435 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:12,436 [INFO]   ✓ 'NIFTY500 QLTY50': 39 rows.
+2026-05-04 01:55:12,451 [INFO]   Checkpoint saved.
+2026-05-04 01:55:14,021 [INFO] 
+[86/131] Strategy Indices > NIFTY500 VALUE 50
+2026-05-04 01:55:15,316 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:15,318 [INFO]   ✓ 'NIFTY500 VALUE 50': 39 rows.
+2026-05-04 01:55:15,333 [INFO]   Checkpoint saved.
+2026-05-04 01:55:17,819 [INFO] 
+────────────────────────────────────────────────────────────
+  Sub-Index: Thematic Indices
+────────────────────────────────────────────────────────────
+2026-05-04 01:55:17,820 [INFO] 
+[87/131] Thematic Indices > NIFTY CAPITAL MKT
+2026-05-04 01:55:18,461 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:18,462 [INFO]   ✓ 'NIFTY CAPITAL MKT': 39 rows.
+2026-05-04 01:55:18,478 [INFO]   Checkpoint saved.
+2026-05-04 01:55:20,886 [INFO] 
+[88/131] Thematic Indices > NIFTY COMMODITIES
+2026-05-04 01:55:21,408 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:21,409 [INFO]   ✓ 'NIFTY COMMODITIES': 39 rows.
+2026-05-04 01:55:21,425 [INFO]   Checkpoint saved.
+2026-05-04 01:55:24,093 [INFO] 
+[89/131] Thematic Indices > NIFTY CONGLOMERATE 50
+2026-05-04 01:55:25,616 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:25,618 [INFO]   ✓ 'NIFTY CONGLOMERATE 50': 39 rows.
+2026-05-04 01:55:25,633 [INFO]   Checkpoint saved.
+2026-05-04 01:55:27,101 [INFO] 
+[90/131] Thematic Indices > NIFTY COREHOUSING
+2026-05-04 01:55:27,701 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:27,702 [INFO]   ✓ 'NIFTY COREHOUSING': 39 rows.
+2026-05-04 01:55:27,717 [INFO]   Checkpoint saved.
+2026-05-04 01:55:29,568 [INFO] 
+[91/131] Thematic Indices > NIFTY CPSE
+2026-05-04 01:55:30,884 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:30,886 [INFO]   ✓ 'NIFTY CPSE': 39 rows.
+2026-05-04 01:55:30,902 [INFO]   Checkpoint saved.
+2026-05-04 01:55:32,704 [INFO] 
+[92/131] Thematic Indices > NIFTY ENERGY
+2026-05-04 01:55:33,414 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:33,415 [INFO]   ✓ 'NIFTY ENERGY': 39 rows.
+2026-05-04 01:55:33,432 [INFO]   Checkpoint saved.
+2026-05-04 01:55:35,804 [INFO] 
+[93/131] Thematic Indices > NIFTY EV
+2026-05-04 01:55:36,591 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:36,593 [INFO]   ✓ 'NIFTY EV': 39 rows.
+2026-05-04 01:55:36,609 [INFO]   Checkpoint saved.
+2026-05-04 01:55:39,151 [INFO] 
+[94/131] Thematic Indices > NIFTY HOUSING
+2026-05-04 01:55:40,089 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:40,090 [INFO]   ✓ 'NIFTY HOUSING': 39 rows.
+2026-05-04 01:55:40,107 [INFO]   Checkpoint saved.
+2026-05-04 01:55:42,935 [INFO] 
+[95/131] Thematic Indices > NIFTY CONSUMPTION
+2026-05-04 01:55:43,677 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:43,678 [INFO]   ✓ 'NIFTY CONSUMPTION': 39 rows.
+2026-05-04 01:55:43,694 [INFO]   Checkpoint saved.
+2026-05-04 01:55:44,725 [INFO] 
+[96/131] Thematic Indices > NIFTY INDIA CORPORATE GROUP INDEX - ADITYA BIRLA GROUP
+2026-05-04 01:55:45,893 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:45,894 [INFO]   ✓ 'NIFTY INDIA CORPORATE GROUP INDEX - ADITYA BIRLA GROUP': 39 rows.
+2026-05-04 01:55:45,911 [INFO]   Checkpoint saved.
+2026-05-04 01:55:48,673 [INFO] 
+[97/131] Thematic Indices > NIFTY INDIA CORPORATE GROUP INDEX - MAHINDRA GROUP
+2026-05-04 01:55:49,994 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:49,996 [INFO]   ✓ 'NIFTY INDIA CORPORATE GROUP INDEX - MAHINDRA GROUP': 39 rows.
+2026-05-04 01:55:50,013 [INFO]   Checkpoint saved.
+2026-05-04 01:55:52,203 [INFO] 
+[98/131] Thematic Indices > NIFTY INDIA CORPORATE GROUP INDEX - TATA GROUP
+2026-05-04 01:55:52,956 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:52,958 [INFO]   ✓ 'NIFTY INDIA CORPORATE GROUP INDEX - TATA GROUP': 39 rows.
+2026-05-04 01:55:52,975 [INFO]   Checkpoint saved.
+2026-05-04 01:55:55,425 [INFO] 
+[99/131] Thematic Indices > NIFTY TATA 25 CAP
+2026-05-04 01:55:56,751 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:56,753 [INFO]   ✓ 'NIFTY TATA 25 CAP': 39 rows.
+2026-05-04 01:55:56,770 [INFO]   Checkpoint saved.
+2026-05-04 01:55:59,048 [INFO] 
+[100/131] Thematic Indices > NIFTY IND DEFENCE
+2026-05-04 01:55:59,611 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:55:59,612 [INFO]   ✓ 'NIFTY IND DEFENCE': 39 rows.
+2026-05-04 01:55:59,629 [INFO]   Checkpoint saved.
+2026-05-04 01:56:01,748 [INFO] 
+[101/131] Thematic Indices > NIFTY IND DIGITAL
+2026-05-04 01:56:02,112 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:02,113 [INFO]   ✓ 'NIFTY IND DIGITAL': 39 rows.
+2026-05-04 01:56:02,131 [INFO]   Checkpoint saved.
+2026-05-04 01:56:03,630 [INFO] 
+[102/131] Thematic Indices > NIFTY INFRALOG
+2026-05-04 01:56:04,231 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:04,232 [INFO]   ✓ 'NIFTY INFRALOG': 39 rows.
+2026-05-04 01:56:04,250 [INFO]   Checkpoint saved.
+2026-05-04 01:56:06,834 [INFO] 
+[103/131] Thematic Indices > NIFTY INTERNET
+2026-05-04 01:56:07,290 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:07,292 [INFO]   ✓ 'NIFTY INTERNET': 39 rows.
+2026-05-04 01:56:07,310 [INFO]   Checkpoint saved.
+2026-05-04 01:56:08,959 [INFO] 
+[104/131] Thematic Indices > NIFTY INDIA MFG
+2026-05-04 01:56:10,127 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:10,128 [INFO]   ✓ 'NIFTY INDIA MFG': 39 rows.
+2026-05-04 01:56:10,147 [INFO]   Checkpoint saved.
+2026-05-04 01:56:11,323 [INFO] 
+[105/131] Thematic Indices > NIFTY NEW CONSUMP
+2026-05-04 01:56:12,318 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:12,319 [INFO]   ✓ 'NIFTY NEW CONSUMP': 39 rows.
+2026-05-04 01:56:12,339 [INFO]   Checkpoint saved.
+2026-05-04 01:56:13,557 [INFO] 
+[106/131] Thematic Indices > NIFTY INDIA RAILWAYS PSU
+2026-05-04 01:56:15,687 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:15,688 [INFO]   ✓ 'NIFTY INDIA RAILWAYS PSU': 39 rows.
+2026-05-04 01:56:15,708 [INFO]   Checkpoint saved.
+2026-05-04 01:56:18,251 [INFO] 
+[107/131] Thematic Indices > NIFTY CORP MAATR
+2026-05-04 01:56:18,946 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:18,947 [INFO]   ✓ 'NIFTY CORP MAATR': 39 rows.
+2026-05-04 01:56:18,966 [INFO]   Checkpoint saved.
+2026-05-04 01:56:20,986 [INFO] 
+[108/131] Thematic Indices > NIFTY IND TOURISM
+2026-05-04 01:56:21,701 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:21,703 [INFO]   ✓ 'NIFTY IND TOURISM': 39 rows.
+2026-05-04 01:56:21,722 [INFO]   Checkpoint saved.
+2026-05-04 01:56:23,153 [INFO] 
+[109/131] Thematic Indices > NIFTY INFRA
+2026-05-04 01:56:24,875 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:24,877 [INFO]   ✓ 'NIFTY INFRA': 39 rows.
+2026-05-04 01:56:24,897 [INFO]   Checkpoint saved.
+2026-05-04 01:56:26,656 [INFO] 
+[110/131] Thematic Indices > NIFTY IPO
+2026-05-04 01:56:28,191 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:28,193 [INFO]   ✓ 'NIFTY IPO': 39 rows.
+2026-05-04 01:56:28,212 [INFO]   Checkpoint saved.
+2026-05-04 01:56:29,787 [INFO] 
+[111/131] Thematic Indices > NIFTY MID LIQ 15
+2026-05-04 01:56:30,333 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:30,334 [INFO]   ✓ 'NIFTY MID LIQ 15': 39 rows.
+2026-05-04 01:56:30,355 [INFO]   Checkpoint saved.
+2026-05-04 01:56:33,221 [INFO] 
+[112/131] Thematic Indices > NIFTY MS IND CONS
+2026-05-04 01:56:33,573 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:33,575 [INFO]   ✓ 'NIFTY MS IND CONS': 39 rows.
+2026-05-04 01:56:33,594 [INFO]   Checkpoint saved.
+2026-05-04 01:56:35,321 [INFO] 
+[113/131] Thematic Indices > NIFTY MNC
+2026-05-04 01:56:35,863 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:35,864 [INFO]   ✓ 'NIFTY MNC': 39 rows.
+2026-05-04 01:56:35,883 [INFO]   Checkpoint saved.
+2026-05-04 01:56:37,456 [INFO] 
+[114/131] Thematic Indices > NIFTY MOBILITY
+2026-05-04 01:56:37,908 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:37,909 [INFO]   ✓ 'NIFTY MOBILITY': 39 rows.
+2026-05-04 01:56:37,927 [INFO]   Checkpoint saved.
+2026-05-04 01:56:39,324 [INFO] 
+[115/131] Thematic Indices > NIFTY NONCYC CONS
+2026-05-04 01:56:39,964 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:39,965 [INFO]   ✓ 'NIFTY NONCYC CONS': 39 rows.
+2026-05-04 01:56:39,980 [INFO]   Checkpoint saved.
+2026-05-04 01:56:42,759 [INFO] 
+[116/131] Thematic Indices > NIFTY PSE
+2026-05-04 01:56:43,519 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:43,521 [INFO]   ✓ 'NIFTY PSE': 39 rows.
+2026-05-04 01:56:43,540 [INFO]   Checkpoint saved.
+2026-05-04 01:56:45,521 [INFO] 
+[117/131] Thematic Indices > NIFTY REITS & INVITS
+2026-05-04 01:56:47,848 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:56:47,849 [INFO]   ✓ 'NIFTY REITS & INVITS': 39 rows.
+2026-05-04 01:56:47,875 [INFO]   Checkpoint saved.
+2026-05-04 01:56:49,269 [INFO] 
+[118/131] Thematic Indices > NIFTY RURAL
+2026-05-04 01:57:20,699 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:20,700 [INFO]   ✓ 'NIFTY RURAL': 39 rows.
+2026-05-04 01:57:20,722 [INFO]   Checkpoint saved.
+2026-05-04 01:57:21,845 [INFO] 
+[119/131] Thematic Indices > NIFTY SERV SECTOR
+2026-05-04 01:57:22,883 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:22,885 [INFO]   ✓ 'NIFTY SERV SECTOR': 39 rows.
+2026-05-04 01:57:22,905 [INFO]   Checkpoint saved.
+2026-05-04 01:57:25,839 [INFO] 
+[120/131] Thematic Indices > NIFTY SHARIAH 25
+2026-05-04 01:57:26,957 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:26,959 [INFO]   ✓ 'NIFTY SHARIAH 25': 39 rows.
+2026-05-04 01:57:26,980 [INFO]   Checkpoint saved.
+2026-05-04 01:57:28,304 [INFO] 
+[121/131] Thematic Indices > NIFTY SME EMERGE
+2026-05-04 01:57:29,910 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:29,912 [INFO]   ✓ 'NIFTY SME EMERGE': 39 rows.
+2026-05-04 01:57:29,933 [INFO]   Checkpoint saved.
+2026-05-04 01:57:32,284 [INFO] 
+[122/131] Thematic Indices > NIFTY TRANS LOGIS
+2026-05-04 01:57:33,312 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:33,313 [INFO]   ✓ 'NIFTY TRANS LOGIS': 39 rows.
+2026-05-04 01:57:33,335 [INFO]   Checkpoint saved.
+2026-05-04 01:57:35,273 [INFO] 
+[123/131] Thematic Indices > NIFTY WAVES
+2026-05-04 01:57:36,586 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:36,587 [INFO]   ✓ 'NIFTY WAVES': 39 rows.
+2026-05-04 01:57:36,608 [INFO]   Checkpoint saved.
+2026-05-04 01:57:37,887 [INFO] 
+[124/131] Thematic Indices > NIFTY100 ENH ESG
+2026-05-04 01:57:38,447 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:38,449 [INFO]   ✓ 'NIFTY100 ENH ESG': 39 rows.
+2026-05-04 01:57:38,471 [INFO]   Checkpoint saved.
+2026-05-04 01:57:40,604 [INFO] 
+[125/131] Thematic Indices > NIFTY100 ESG
+2026-05-04 01:57:41,815 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:41,816 [INFO]   ✓ 'NIFTY100 ESG': 39 rows.
+2026-05-04 01:57:41,833 [INFO]   Checkpoint saved.
+2026-05-04 01:57:44,828 [INFO] 
+[126/131] Thematic Indices > NIFTY100ESGSECLDR
+2026-05-04 01:57:45,293 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:45,295 [INFO]   ✓ 'NIFTY100ESGSECLDR': 39 rows.
+2026-05-04 01:57:45,322 [INFO]   Checkpoint saved.
+2026-05-04 01:57:46,939 [INFO] 
+[127/131] Thematic Indices > NIFTY100 LIQ 15
+2026-05-04 01:57:47,455 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:47,457 [INFO]   ✓ 'NIFTY100 LIQ 15': 39 rows.
+2026-05-04 01:57:47,605 [INFO]   Checkpoint saved.
+2026-05-04 01:57:48,952 [INFO] 
+[128/131] Thematic Indices > NIFTY50 SHARIAH
+2026-05-04 01:57:49,478 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:49,480 [INFO]   ✓ 'NIFTY50 SHARIAH': 39 rows.
+2026-05-04 01:57:49,520 [INFO]   Checkpoint saved.
+2026-05-04 01:57:51,467 [INFO] 
+[129/131] Thematic Indices > NIFTY MULTI MFG
+2026-05-04 01:57:56,388 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:56,390 [INFO]   ✓ 'NIFTY MULTI MFG': 39 rows.
+2026-05-04 01:57:56,412 [INFO]   Checkpoint saved.
+2026-05-04 01:57:58,024 [INFO] 
+[130/131] Thematic Indices > NIFTY MULTI INFRA
+2026-05-04 01:57:58,666 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:57:58,667 [INFO]   ✓ 'NIFTY MULTI INFRA': 39 rows.
+2026-05-04 01:57:58,689 [INFO]   Checkpoint saved.
+2026-05-04 01:58:01,023 [INFO] 
+[131/131] Thematic Indices > NIFTY500 SHARIAH
+2026-05-04 01:58:01,772 [INFO]   ✓ 39 rows | columns: ['Date', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:58:01,773 [INFO]   ✓ 'NIFTY500 SHARIAH': 39 rows.
+2026-05-04 01:58:01,790 [INFO]   Checkpoint saved.
+2026-05-04 01:58:03,847 [INFO] 
+=================================================================
+2026-05-04 01:58:03,847 [INFO] SAVED 5070 rows → 'nifty_pepb_all.csv'
+2026-05-04 01:58:03,848 [INFO] Indices  : 130
+2026-05-04 01:58:03,848 [INFO] Columns  : ['Date', 'Index_Name', 'Sub_Index', 'PE', 'PB', 'Div_Yield']
+2026-05-04 01:58:03,848 [INFO] Date span: 02 Mar 2026 → 30 Apr 2026
+2026-05-04 01:58:03,848 [INFO] =================================================================
+2026-05-04 01:58:03,848 [INFO] Not found indices saved to 'nifty_pepb_not_found.txt' (1 items).

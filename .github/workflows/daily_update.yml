@@ -1,40 +1,57 @@
-name: NSE Data Daily Sync
+name: Update Valuation Data
 
 on:
   schedule:
-    - cron: '30 23 * * *' # 5:00 AM IST
-  workflow_dispatch: 
+    # 5:30 AM IST = 00:00 UTC  |  runs on day 1, 4, 7, 10, … of each month
+    - cron: "0 0 */3 * *"
+  workflow_dispatch:          # allow manual trigger from the Actions tab
+
+permissions:
+  contents: write             # needed to push the updated parquet
 
 jobs:
-  update_parquet:
+  update:
     runs-on: ubuntu-latest
+    timeout-minutes: 90       # full scrape of ~100 indices can take a while
+
     steps:
-      - name: Checkout Code
+      # ── 1. Checkout ──────────────────────────────────────────
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
-      - name: Debug Workspace
-        run: |
-          echo "Listing root files:"
-          ls -F
-          echo "Listing data folder:"
-          ls -F data/
-
-      - name: Set up Python
+      # ── 2. Python ────────────────────────────────────────────
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.11"
+          cache: pip
 
-      - name: Install Dependencies
-        run: pip install pandas pyarrow requests fastparquet
+      # ── 3. Dependencies ──────────────────────────────────────
+      - name: Install dependencies
+        run: pip install requests pandas openpyxl pyarrow urllib3
 
-      - name: Run Scraper
-        # If 'Debug Workspace' shows the file is in root, this is correct:
-        run: python nifty_scraper.py
+      # ── 4. Scrape & merge ────────────────────────────────────
+      - name: Run incremental update
+        run: python update_valuation.py
+        env:
+          PYTHONUNBUFFERED: "1"   # so logs stream in real-time
 
-      - name: Commit and Push
+      # ── 5. Commit & push ─────────────────────────────────────
+      - name: Commit updated parquet
         run: |
-          git config --global user.name 'Screener Bot'
-          git config --global user.email 'bot@srijan.me'
-          git add data/*.parquet
-          git commit -m "Auto-update: NIFTY Data $(date)" || echo "No changes to commit"
-          git push
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage only the two parquet files we care about
+          git add data/valuation_data.parquet valuation_data.parquet
+
+          # Commit only if something actually changed
+          if git diff --cached --quiet; then
+            echo "No new data — nothing to commit."
+          else
+            TODAY=$(date -u '+%Y-%m-%d')
+            git commit -m "chore: valuation data update ${TODAY} [skip ci]"
+            git push
+          fi
