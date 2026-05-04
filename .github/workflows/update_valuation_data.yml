@@ -53,5 +53,6 @@ jobs:
           else
             TODAY=$(date -u '+%Y-%m-%d')
             git commit -m "chore: valuation data update ${TODAY} [skip ci]"
+            git pull --rebase origin main
             git push
           fi
