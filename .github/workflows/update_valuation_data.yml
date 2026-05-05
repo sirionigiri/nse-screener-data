@@ -44,15 +44,15 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage only the two parquet files we care about
           git add data/valuation_data.parquet valuation_data.parquet
 
-          # Commit only if something actually changed
           if git diff --cached --quiet; then
             echo "No new data — nothing to commit."
           else
             TODAY=$(date -u '+%Y-%m-%d')
             git commit -m "chore: valuation data update ${TODAY} [skip ci]"
+            git stash                        # park the log/csv/checkpoint files
             git pull --rebase origin main
+            git stash drop || true           # discard them — we don't need them in the repo
             git push
           fi
