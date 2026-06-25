@@ -1,0 +1,5 @@
+# .gitignore
+*.log
+*.csv
+*_not_found.txt
+*_checkpoint.csv
